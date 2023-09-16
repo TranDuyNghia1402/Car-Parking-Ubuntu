@@ -1,0 +1,23 @@
+Ý tưởng:
+	-Dựng mô hình gồm 10 ô để xe
+	-2 cổng vào/ra
+	-2 camera gắn ở mỗi cổng
+	-1 giao diện người dùng (có thể theo dõi camera mỗi cổng, xem lượng xe đang có trong gara, nhật kí hoạt động của gara)
+	-1 web để lấy mã định danh và xác nhận để xe
+1. Cổng vào: 
+	1.0: trigger
+	1.1: nhận diện biển số
+	1.2: chuyển đổi biển số sang text
+	1.3: lưu biển số và thời gian gửi vào file csv
+	1.4: tạo qr code, quét qr code để nhận mã định danh
+	1.5: mở cửa cho vào
+2. Cổng ra:	
+	2.0: trigger
+	2.1: nhận diện biển số
+	2.2: chuyển đổi biển số sang text
+	2.3: so sanh với data trong file csv: - Đúng: tính thời gian * giá tiền mỗi phút --> chuyển tiền đúng -> cho ra
+					      - Sai: k cho ra
+		*data: biển số xe + mã định danh
+	2.4: mở cửa cho ra
+3: Slot để xe:
+	Sử dụng cảm biến để kiểm tra xem còn trống hay không
